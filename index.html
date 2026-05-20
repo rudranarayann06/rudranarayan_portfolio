@@ -26,6 +26,15 @@
     /*======================================
 //--//-->   ABOUT
 ======================================*/
+html{
+
+    scroll-behavior:smooth;
+}
+
+body{
+
+    overflow-x:hidden;
+}
 
     .about-mf .box-shadow-full {
       padding-top: 4rem;
@@ -218,7 +227,7 @@
     .menu-left {
       width: 42%;
       color: white;
-      padding-left: 10px;
+      padding-left: 0px;
       display: flex;
 
       flex-direction: column;
@@ -232,6 +241,21 @@
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 30px;
+    }
+
+    .menu-logo {
+
+      width: 200px;
+
+      height: auto;
+
+      object-fit: contain;
+
+      margin-bottom: 24px;
+
+      margin-left: -6px;
+
+      display: block;
     }
 
     .menu-content a:hover {
@@ -345,7 +369,7 @@
       .menu-left {
         width: 42%;
         color: white;
-        padding-left: 10px;
+        padding-left: 0px;
         display: flex;
 
         flex-direction: column;
@@ -430,6 +454,8 @@
       margin-bottom: 35px;
     }
 
+
+
     .menu-content a:hover {
       color: white;
       transform: translateX(-12px);
@@ -483,9 +509,856 @@
     }
 
     .home-slider .slider-item .one-third {
-    background-position: center  ;
-    transform: scale(1.00);
-    pointer-events: none;
+      background-position: center;
+      transform: scale(1.00);
+      pointer-events: none;
+    }
+
+    /* =========================
+      MODERN ABOUT SECTION
+========================= */
+
+    .modern-about-section {
+
+      width: 100%;
+      min-height: 100vh;
+
+      padding: 120px 8%;
+
+      background: black;
+    }
+
+    .about-heading {
+
+      color: white;
+
+      font-size: 72px;
+
+      font-weight: 700;
+
+      margin-bottom: 80px;
+
+      font-family: 'Poppins', sans-serif;
+
+      position: relative;
+
+      display: inline-block;
+    }
+
+    .about-heading::after {
+
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      bottom: -12px;
+
+      width: 90px;
+      height: 4px;
+
+      background: #ffbd39;
+
+      border-radius: 20px;
+    }
+
+    /* MAIN FLEX */
+
+    .about-container {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 90px;
+    }
+
+    /* IMAGE SIDE */
+
+    .about-image-box {
+
+      width: 42%;
+
+      display: flex;
+
+      justify-content: center;
+    }
+
+    .about-image {
+
+      width: 380px;
+      height: 380px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      filter: grayscale(100%) brightness(0.9);
+
+      transition:
+        filter 0.6s ease,
+        transform 0.6s ease,
+        box-shadow 0.6s ease;
+
+      box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+
+      cursor: pointer;
+    }
+
+    /* HOVER EFFECT */
+
+    .about-image:hover {
+
+      filter: grayscale(0%) brightness(1);
+
+      transform: scale(1.04);
+
+      box-shadow:
+        0 0 45px rgba(255, 189, 57, 0.18),
+        0 20px 80px rgba(0, 0, 0, 0.55);
+    }
+
+    /* RIGHT TEXT */
+
+    .about-content {
+
+      width: 50%;
+    }
+
+    .about-content h2 {
+
+      color: #ffbd39;
+
+      font-size: 28px;
+
+      font-weight: 600;
+
+      margin-bottom: 28px;
+
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .about-content p {
+
+      color: #bdbdbd;
+
+      font-size: 20px;
+
+      line-height: 1.9;
+
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px) {
+
+      .modern-about-section {
+
+        padding: 100px 7%;
+      }
+
+      .about-heading {
+
+        font-size: 48px;
+
+        margin-bottom: 50px;
+      }
+
+      .about-container {
+
+        flex-direction: column;
+
+        gap: 50px;
+
+        text-align: center;
+      }
+
+      .about-image-box,
+      .about-content {
+
+        width: 100%;
+      }
+
+      .about-image {
+
+        width: 260px;
+        height: 260px;
+      }
+
+      .about-content p {
+
+        font-size: 17px;
+      }
+
+    }
+
+
+
+
+    /* IMAGE SLIDER */
+    /* =========================
+      EXPERIENCE SECTION
+========================= */
+
+    .experience-section {
+
+      width: 100%;
+
+      padding: 120px 0;
+
+      background: black;
+
+      overflow: hidden;
+    }
+
+    /* TITLE */
+
+    .experience-title {
+
+      color: white;
+
+      font-size: 64px;
+
+      font-weight: 700;
+
+      margin-bottom: 70px;
+
+      padding-left: 8%;
+
+      font-family: 'Poppins', sans-serif;
+
+      position: relative;
+    }
+
+    .experience-title::after {
+
+      content: "";
+
+      position: absolute;
+
+      left: 8%;
+      bottom: -14px;
+
+      width: 100px;
+      height: 4px;
+
+      background: #ffbd39;
+
+      border-radius: 20px;
+    }
+
+    /* SLIDER */
+
+    .logo-slider {
+
+      width: 100%;
+
+      overflow: hidden;
+
+      position: relative;
+    }
+
+    /* TRACK */
+
+    .logo-track {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 35px;
+
+      width: max-content;
+
+      animation: scrollLogos 22s linear infinite;
+    }
+
+    /* CARD */
+
+    .logo-card {
+
+      min-width: 320px;
+
+      height: 200px;
+
+      padding: 25px;
+
+      border-radius: 28px;
+
+      background: white;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      flex-shrink: 0;
+
+      transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+    }
+
+    /* LOGO IMAGE */
+
+    .logo-card img {
+
+      width: 80%;
+
+      height: 80%;
+
+      object-fit: contain;
+    }
+
+    /* HOVER */
+
+    .logo-card:hover {
+
+      transform: translateY(-10px);
+
+      box-shadow:
+        0 15px 45px rgba(255, 189, 57, 0.15);
+    }
+
+    /* AUTO SCROLL */
+
+    @keyframes scrollLogos {
+
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* MOBILE FIX */
+
+    @media(max-width:768px) {
+
+      .experience-section {
+
+        padding: 100px 0;
+      }
+
+      .experience-title {
+
+        font-size: 46px;
+
+        margin-bottom: 50px;
+
+        padding-left: 7%;
+      }
+
+      .logo-track {
+
+        gap: 20px;
+      }
+
+      .logo-card {
+
+        min-width: 220px;
+
+        height: 140px;
+
+        border-radius: 22px;
+
+        padding: 18px;
+      }
+
+      .logo-card img {
+
+        width: 85%;
+
+        height: 85%;
+      }
+
+    }
+
+
+    /* =========================
+      ACHIEVEMENTS SECTION
+========================= */
+
+    .achievements-section {
+
+      width: 100%;
+
+      padding: 120px 8%;
+
+      background: black;
+    }
+
+    /* TITLE */
+
+    .achievements-title {
+
+      color: white;
+
+      font-size: 64px;
+
+      font-weight: 700;
+
+      margin-bottom: 70px;
+
+      position: relative;
+
+      display: inline-block;
+
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .achievements-title::after {
+
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      bottom: -14px;
+
+      width: 100px;
+      height: 4px;
+
+      background: #ffbd39;
+
+      border-radius: 20px;
+    }
+
+    /* GRID */
+
+    .achievements-container {
+
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 35px;
+    }
+
+    /* CARD */
+
+    .achievement-card {
+
+      position: relative;
+
+      padding: 45px;
+
+      border-radius: 32px;
+
+      background: rgba(255, 255, 255, 0.05);
+
+      border: 1px solid rgba(255, 255, 255, 0.08);
+
+      backdrop-filter: blur(16px);
+
+      overflow: hidden;
+
+      transition:
+        transform 0.5s ease,
+        background 0.5s ease,
+        box-shadow 0.5s ease;
+    }
+
+    /* HOVER */
+
+    .achievement-card:hover {
+
+      transform: translateY(-12px);
+
+      background: rgba(255, 255, 255, 0.08);
+
+      box-shadow:
+        0 15px 50px rgba(255, 189, 57, 0.12);
+    }
+
+    /* NUMBER */
+
+    .achievement-number {
+
+      font-size: 72px;
+
+      font-weight: 700;
+
+      color: rgba(255, 189, 57, 0.15);
+
+      margin-bottom: 20px;
+
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* HEADING */
+
+    .achievement-card h3 {
+
+      color: white;
+
+      font-size: 30px;
+
+      margin-bottom: 20px;
+
+      font-weight: 600;
+
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* TEXT */
+
+    .achievement-card p {
+
+      color: #bdbdbd;
+
+      font-size: 18px;
+
+      line-height: 1.9;
+
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px) {
+
+      .achievements-section {
+
+        padding: 100px 7%;
+      }
+
+      .achievements-title {
+
+        font-size: 46px;
+
+        margin-bottom: 50px;
+      }
+
+      .achievements-container {
+
+        grid-template-columns: 1fr;
+      }
+
+      .achievement-card {
+
+        padding: 35px;
+      }
+
+      .achievement-number {
+
+        font-size: 52px;
+      }
+
+      .achievement-card h3 {
+
+        font-size: 24px;
+      }
+
+      .achievement-card p {
+
+        font-size: 16px;
+      }
+
+    }
+
+
+    /* HOVER EFFECT */
+
+    .achievement-card:hover .achievement-slider img {
+
+      transform: scale(1.02);
+    }
+
+    /* =========================
+      ACHIEVEMENT SLIDER
+========================= */
+
+    .achievement-slider {
+
+      width: 100%;
+
+      height: 340px;
+
+      position: relative;
+
+      overflow: hidden;
+
+      border-radius: 24px;
+
+      margin-bottom: 35px;
+    }
+
+    /* ALL IMAGES */
+
+    .achievement-slider img {
+
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      left: 0;
+      top: 0;
+
+      object-fit: cover;
+
+      opacity: 0;
+
+      animation: fadeSlider 8s infinite;
+
+      transition: transform 0.5s ease;
+    }
+
+    /* HOVER EFFECT */
+
+    .achievement-card:hover .achievement-slider img {
+
+      transform: scale(1.03);
+    }
+
+    /* IMAGE TIMINGS */
+
+    .achievement-slider img:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .achievement-slider img:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    .achievement-slider img:nth-child(3) {
+      animation-delay: 2s;
+    }
+
+    .achievement-slider img:nth-child(4) {
+      animation-delay: 3s;
+    }
+
+    .achievement-slider img:nth-child(5) {
+      animation-delay: 4s;
+    }
+
+    .achievement-slider img:nth-child(6) {
+      animation-delay: 5s;
+    }
+
+    .achievement-slider img:nth-child(7) {
+      animation-delay: 6s;
+    }
+
+    .achievement-slider img:nth-child(8) {
+      animation-delay: 7s;
+    }
+
+    /* FADE ANIMATION */
+
+    @keyframes fadeSlider {
+
+      0% {
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      20% {
+        opacity: 1;
+      }
+
+      30% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px) {
+
+      .achievement-slider {
+
+        height: 240px;
+      }
+
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px) {
+
+      .achievement-slider {
+
+        height: 240px;
+      }
+
+      .slides img {
+
+        height: 240px;
+      }
+
+    }
+
+/* =========================
+   HERO KNOW MORE BUTTON
+========================= */
+
+.hero-scroll-wrapper{
+
+    margin-top:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+/* BUTTON */
+
+.know-more-btn{
+
+    width:190px;
+
+    height:58px;
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-size:16px;
+
+    letter-spacing:2px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:all 0.45s cubic-bezier(0.22,1,0.36,1);
+
+    background:rgba(255,255,255,0.02);
+
+    backdrop-filter:blur(10px);
+}
+
+.know-more-btn:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#ffbd39;
+
+    color:#ffbd39;
+
+    box-shadow:0 10px 35px rgba(255,189,57,0.18);
+}
+
+/* MOUSE ICON */
+
+.scroll-mouse{
+
+    width:24px;
+
+    height:38px;
+
+    border:2px solid rgba(255,255,255,0.55);
+
+    border-radius:25px;
+
+    margin-top:28px;
+
+    position:relative;
+}
+
+/* SCROLL DOT */
+
+.scroll-mouse::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:10px;
+
+    left:50%;
+
+    width:4px;
+
+    height:8px;
+
+    background:white;
+
+    border-radius:20px;
+
+    transform:translateX(-50%);
+
+    animation:scrollAnim 1.6s infinite;
+}
+
+/* ANIMATION */
+
+@keyframes scrollAnim{
+
+    0%{
+        opacity:0;
+        top:10px;
+    }
+
+    30%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+        top:28px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .hero-scroll-wrapper{
+
+        margin-top:28px;
+    }
+
+    .know-more-btn{
+
+        width:220px;
+
+        height:68px;
+
+        font-size:18px;
+
+        letter-spacing:2px;
+    }
+
+    .scroll-mouse{
+
+        width:28px;
+
+        height:46px;
+
+        margin-top:40px;
+    }
 }
   </style>
 
@@ -520,6 +1393,7 @@
       ✕
     </div>
     <div class="menu-left">
+
       <img src="images/about-me.jpeg" class="menu-profile">
       <h2>
         Hi, I am Rudra! Building Ideas Into Digital Experiences <br>
@@ -558,7 +1432,6 @@
     <div class="menu-content">
       <a href="#home-section" onclick="toggleMenu()">Home</a>
       <a href="#about-section" onclick="toggleMenu()">About</a>
-      <a href="#resume-section" onclick="toggleMenu()">Resume</a>
       <a href="#project-section" onclick="toggleMenu()">Projects</a>
       <a href="#contact-section" onclick="toggleMenu()">Contact</a>
     </div>
@@ -620,12 +1493,15 @@
                 <br>
                 <br>
                 <h2>Developer • Innovator • Creator</h2>
-                <!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-                <!-- <br> -->
-                <p><a href="http://www.linkedin.com/in/rudranarayann" class="btn btn-primary py-3 px-4">Linkedin</a>
-                  <a href="https://github.com/rudranarayann06" class="btn btn-white btn-outline-white py-3 px-4">My
-                    works</a>
-                </p>
+                <div class="hero-scroll-wrapper">
+
+                  <a href="#about-section" class="know-more-btn">
+                    KNOW MORE
+                  </a>
+
+                  <div class="scroll-mouse"></div>
+
+                </div>
               </div>
             </div>
           </div>
@@ -634,209 +1510,263 @@
     </div>
   </section>
 
+  <section class="modern-about-section" id="about-section">
 
+    <h1 class="about-heading">
+      About Me
+    </h1>
 
-  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    <div class="container">
-      <div class="row">
-        <div class="row d-flex align-items-stretch">
-          <!-- <div class="row d-flex"> -->
-          <div class="col-md-6 col-lg-5 d-flex">
-            <div class="img-about img d-flex align-items-stretch">
-              <div class="overlay">
-                <div class="row">
-                  <div class="col-sm-6 col-md-5">
-                    <div class="about-img">
-                      <img src="images/about-me.jpeg" class="img-fluid rounded b-shadow-a" alt="">
-                    </div>
-                  </div>
-                  <!-- Details next to profile image -->
-                  <div class="col-sm-6 col-md-7">
-                    <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Rudra Narayan Nahak</span></p>
-                      <p><span class="title-s">Job Role: </span> <span>Student</span></p>
-                      <!-- <p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p> -->
-                      <p><span class="title-s">Address: </span> <span>Bhubaneswar, India</span></p>
-                    </div>
-                  </div>
-                </div>
+    <div class="about-container">
 
-                <div class="skill-mf">
-                  <p class="title-s">Skills</p>
-                  <!-- <span>SQL</span> <span class="pull-right">95%</span> -->
-                  <!-- <div class="progress"> -->
-                  <!-- <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" -->
-                  <!-- aria-valuemax="100"></div> -->
-                  <!-- </div> -->
+      <!-- LEFT IMAGE -->
+      <div class="about-image-box">
 
-                  <span>Java</span> <span class="pull-right">90%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
+        <img src="images/about-me.jpeg" class="about-image">
 
-                  <span>Python</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
+      </div>
 
-                  <span>Critical Thinking</span> <span class="pull-right">80%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
+      <!-- RIGHT CONTENT -->
+      <div class="about-content">
 
-                  <span>Leadership</span> <span class="pull-right">85%</span>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="80" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <h2>
+          Developer • Innovator • Creator
+        </h2>
 
-          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-            <div class="row justify-content-start pb-3">
-              <div class="col-md-12 heading-section ftco-animate">
+        <p>
+          Passionate developer focused on building modern digital experiences,
+          creative interfaces, and intelligent solutions.
+          I enjoy blending design, innovation, and technology
+          to create impactful projects and meaningful user experiences.
+        </p>
 
-                <h1 class="big">About</h1>
-                <h2 class="mb-4">About Me</h2>
+      </div>
 
-                <p>I am a second-year Computer Science and Engineering student with a deep passion for technology and
-                  problem-solving. Eager to expand my knowledge and skills, I am focused on building a strong foundation
-                  in programming, algorithms, and data structures. Currently, I am learning key programming languages
-                  such as Python, Java, and C++, and I am excited to explore various domains within computer science,
-                  including software development, artificial intelligence, and web development.
+    </div>
 
-                  Through coursework and personal projects, I am developing critical thinking skills and learning to
-                  approach problems with a logical and creative mindset. I am particularly interested in collaborating
-                  with others on tech-related projects, as I believe teamwork fosters innovation and growth.
-
-                  I am actively seeking opportunities to apply my knowledge through internships, hackathons, or
-                  volunteer work to gain hands-on experience and further enhance my technical abilities. I am open to
-                  connecting with like-minded professionals and mentors who can help guide me on my journey in the tech
-                  industry.</p>
-                <ul class="about-info mt-4 px-md-0 px-2">
-                  <li class="d-flex"><span>Profile:</span> <span>CSE Student</span></li>
-                  <li class="d-flex"><span>Domain:</span> <span>Web Development</span></li>
-                  <li class="d-flex"><span>Education:</span> <span>BTech. (CSE)</span></li>
-                  <li class="d-flex"><span>Language:</span> <span>English, Hindi, Odia</span></li>
-                  <!-- <li class="d-flex"><span>BI Tools:</span> <span>Video Editing,MS Excel,MS Word &amp; Tableau</span></li> -->
-                  <li class="d-flex"><span>Other Skills:</span> <span>Video Editing </span></li>
-                  <li class="d-flex"><span>Interest:</span> <span>Travelling, Coding, Open For Internships</span></li>
-
-                </ul>
-              </div>
-            </div>
-
-
-            <!-- <div class="counter-wrap ftco-animate d-flex mt-md-3"> -->
-            <!-- <div class="text"> -->
-            <!-- <p class="mb-4"> -->
-            <!-- <span class="number" data-number="30">0</span> <span>+</span> -->
-            <!-- <span>&nbsp; Projects completed</span> -->
-            <!-- </p> -->
-            <!-- <p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a></p> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </div> -->
-          </div>
-        </div>
   </section>
 
+  <section class="experience-section">
 
+    <h2 class="experience-title">
+      Experience
+    </h2>
 
+    <div class="logo-slider">
 
-  <section class="ftco-section ftco-no-pb" id="resume-section">
-    <div class="container">
-      <div class="row justify-content-center pb-5">
-        <div class="col-md-10 heading-section text-center ftco-animate">
-          <h1 class="big big-2">Resume</h1>
-          <h2 class="mb-4">Resume</h2>
-          <p>Second-year Computer Science Engineering student with a strong foundation in programming, problem-solving,
-            and data structures. Eager to apply technical skills and expand knowledge in software development and
-            engineering.</p>
-        </div>
-      </div>
+      <div class="logo-track">
 
-      <div class="row">
-        <h1 class="big-4">Experience</h1>
-        <div class="underline"></div>
-      </div>
-      <br>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="resume-wrap ftco-animate">
-            <!-- <span class="date">2021-Present</span> -->
-            <!-- <h2>Senior Data Analyst</h2> -->
-            <!-- <span class="position">Merkle</span> -->
-            <!-- <p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International.  -->
-            <ul>
-              <!-- <li>Analysed ad campaigns, clickstream, and customer surveys data, identified an increasing demand and launched a strategic product line.</li> -->
-              <!-- <li>Developed time series forecasting models to predict sales and optimize marketing budgets, got model performance of 92%.</li> -->
-              <!-- <li>Designed and executed A/B tests, performed rigorous statistical analysis. Led to 20% MoM increase in the conversion rate.</li> -->
-            </ul>
-            </p>
-          </div>
-
+        <!-- CARD 1 -->
+        <div class="logo-card">
+          <img src="images/IEEE.png">
         </div>
 
-        <div class="col-md-6">
-          <div class="resume-wrap ftco-animate">
-            <!-- <span class="date">2018-2021</span> -->
-            <!-- <h2>Senior Data Analyst</h2> -->
-            <!-- <span class="position">iQuanti</span> -->
-            <!-- <p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands.  -->
-            <ul>
-              <!-- <li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li> -->
-              <!-- <li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li> -->
-              <!-- <li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li> -->
-            </ul>
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-      <br>
-      <br>
-
-      <div class="row">
-        <h1 class="big-4">Education</h1>
-        <div class="underline"></div>
-      </div>
-      <br>
-
-      <div class="row">
-        <div class="col-md-6">
-          <div class="resume-wrap ftco-animate">
-            <span class="date">2024-Present</span>
-            <h2>Btech (CSE)</h2>
-            <span class="position">Siksha 'O' Anusandhan University</span>
-            <p class="mt-4">Current CGPA: 8.64</p>
-          </div>
+        <!-- CARD 2 -->
+        <div class="logo-card">
+          <img src="images/Google Cloud.png">
         </div>
 
-        <div class="col-md-6">
-          <div class="resume-wrap ftco-animate">
-            <span class="date">2022-2024</span>
-            <h2>Higher Secondary School</h2>
-            <span class="position">Kendriya Vidyalaya</span>
-            <p class="mt-4">12th-75%; 10th-89%</p>
-          </div>
+        <!-- CARD 3 -->
+        <div class="logo-card">
+          <img src="images/SOA.png">
         </div>
+
+        <!-- CARD 4 -->
+        <div class="logo-card">
+          <img src="images/KV.png">
+        </div>
+
+        <div class="logo-card">
+          <img src="images/NCC.png">
+        </div>
+
+        <!-- DUPLICATE FOR SMOOTH LOOP -->
+
+        <div class="logo-card">
+          <img src="images/IEEE.png">
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="logo-card">
+          <img src="images/Google Cloud.png">
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="logo-card">
+          <img src="images/SOA.png">
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="logo-card">
+          <img src="images/KV.png">
+        </div>
+
+        <div class="logo-card">
+          <img src="images/NCC.png">
+        </div>
+
       </div>
 
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-6 text-center ftco-animate">
-          <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-        </div>
-      </div>
     </div>
+
+  </section>
+
+  <section class="achievements-section" id="achievements-section">
+
+    <h2 class="achievements-title">
+      Achievements
+    </h2>
+
+    <div class="achievements-container">
+
+      <!-- CARD 1 -->
+      <div class="achievement-card">
+
+        <!-- IMAGE SLIDER -->
+        <div class="achievement-slider">
+          <img src="images/CG FEST/CGF-1.jpeg">
+          <img src="images/CG FEST/CGF-2.jpeg">
+          <img src="images/CG FEST/CGF-3.png">
+          <img src="images/CG FEST/CGF-4.png">
+          <img src="images/CG FEST/CGF-5.png">
+          <img src="images/CG FEST/CGF-6.png">
+          <img src="images/CG FEST/CGF-7.jpeg">
+          <img src="images/CG FEST/CGF-8.jpeg">
+        </div>
+
+        <div class="achievement-number">
+          01
+        </div>
+
+        <h3>
+          Chakravyuh & Genesis 2025 — A Journey of Innovation
+        </h3>
+
+        <p>
+          A transformative 3-day journey filled with cybersecurity challenges,
+          innovation, teamwork, and unforgettable learning experiences.
+        </p>
+
+      </div>
+
+      <div class="achievement-card">
+
+        <!-- IMAGE SLIDER -->
+        <div class="achievement-slider">
+          <img src="images/SIH/SIH-1.png">
+          <img src="images/SIH/SIH-2.jpeg">
+          <img src="images/SIH/SIH-3.png">
+          <img src="images/SIH/SIH-4.jpg">
+          <img src="images/SIH/SIH-5.png">
+          <img src="images/SIH/SIH-6.png">
+          <img src="images/SIH/SIH-7.jpg">
+          <img src="images/SIH/SIH-1.png">
+        </div>
+
+        <div class="achievement-number">
+          02
+        </div>
+
+        <h3>
+          MindMesh — Top 50 at SOA Ideathon 2025
+        </h3>
+
+        <p>
+          Selected among the Top 50 teams out of 300+ entries at the SOA Ideathon for
+          MindMesh — a Swadeshi AI-powered mental wellness platform focused on safe, accessible,
+          and stigma-free support for India’s youth.
+        </p>
+
+      </div>
+
+      <div class="achievement-card">
+
+        <!-- IMAGE SLIDER -->
+        <div class="achievement-slider">
+          <img src="images/KIIT/KIIT-1.png">
+          <img src="images/KIIT/KIIT-2.jpg">
+          <img src="images/KIIT/KIIT-3.jpg">
+          <img src="images/KIIT/KIIT-4.jpg">
+          <img src="images/KIIT/KIIT-5.jpg">
+          <img src="images/KIIT/KIIT-1.png">
+          <img src="images/KIIT/KIIT-2.jpg">
+          <img src="images/KIIT/KIIT-3.jpg">
+        </div>
+
+        <div class="achievement-number">
+          03
+        </div>
+
+        <h3>
+          Top 10 Finalist — CUBE-X Ideathon 2025
+        </h3>
+
+        <p>
+          Selected among the Top 10 teams out of 92 participating teams at the CUBE-X Inter-University
+          Ideathon during OCIT 2025 for presenting innovative solutions and impactful ideas.
+        </p>
+
+      </div>
+
+      <div class="achievement-card">
+
+        <!-- IMAGE SLIDER -->
+        <div class="achievement-slider">
+          <img src="images/GC/GC-5.png">
+          <img src="images/GC/GC-1.jpeg">
+          <img src="images/GC/GC-2.jpg">
+          <img src="images/GC/GC-3.jpg">
+          <img src="images/GC/GC-4.jpeg">
+          <img src="images/GC/GC-6.jpeg">
+          <img src="images/GC/GC-7.png">
+          <img src="images/GC/GC-8.png">
+        </div>
+
+        <div class="achievement-number">
+          04
+        </div>
+
+        <h3>
+          Google Cloud Arcade Legend Milestone
+        </h3>
+
+        <p>
+          A year-long journey of solving cloud challenges, earning swags, and
+          building real-world skills through the Google Cloud Skills Arcade experience.
+        </p>
+
+      </div>
+
+      <div class="achievement-card">
+
+        <!-- IMAGE SLIDER -->
+        <div class="achievement-slider">
+          <img src="images/EL/EL-1.png">
+          <img src="images/EL/EL-2.png">
+          <img src="images/EL/EL-3.png">
+          <img src="images/EL/EL-4.png">
+          <img src="images/EL/EL-5.png">
+          <img src="images/EL/EL-1.png">
+          <img src="images/EL/EL-3.png">
+          <img src="images/EL/EL-5.png">
+        </div>
+
+        <div class="achievement-number">
+          05
+        </div>
+
+        <h3>
+          Elysium 2025 — Innovation, Coding & Victory
+        </h3>
+
+        <p>
+          Participated in multiple tech events at Elysium 2025, gaining hands-on experience in coding,
+          AI challenges, teamwork, and securing 1st place in the Tormenta Ideathon.
+        </p>
+
+      </div>
+
+    </div>
+
   </section>
 
 
@@ -847,57 +1777,69 @@
         <div class="col-md-7 heading-section text-center ftco-animate">
           <h1 class="big big-2">Projects</h1>
           <h2 class="mb-4">Projects</h2>
-          <p>Below are some of my projects.</p>
-        </div>
-      </div>
-      <div class="row d-flex">
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="blog-entry justify-content-end">
-            <a href="https://rudranarayann06.github.io/sih_ps25131/" class="block-20 zoom-effect"
-              style="background-image: url('images/proj_1.jpeg');">
-            </a>
-            <div class="text mt-3 float-right d-block">
-
-              <h3 class="heading"><a href="https://rudranarayann06.github.io/sih_ps25131/">Mental Health Ecosystem for
-                  Students & Youth</a></h3>
-              <p>A self-reliant, multilingual HealthTech platform: peer support, AI triage & verified counsellors —
-                built for India.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="blog-entry justify-content-end">
-            <a href="https://github.com/rudranarayann06/Task_Manager_HackOdisha" class="block-20 zoom-effect"
-              style="background-image: url('images/proj_2.jpeg');">
-            </a>
-            <div class="text mt-3 float-right d-block">
-
-              <h3 class="heading"><a href="https://github.com/rudranarayann06/Task_Manager_HackOdisha">AI Task Manager &
-                  Expense Tracker</a></h3>
-              <p>Your all-in-one personal assistant for smarter productivity and stress-free finances. 💡 Intelligently
-                schedules tasks, tracks expenses, and gives AI-driven insights</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex ftco-animate">
-          <div class="blog-entry">
-            <a href="https://github.com/rudranarayann06/nutrishare-byteverse2.0" class="block-20 zoom-effect"
-              style="background-image: url('images/proj_3.jpg');">
-            </a>
-            <div class="text mt-3 float-right d-block">
-
-              <h3 class="heading"><a href="https://github.com/rudranarayann06/nutrishare-byteverse2.0">NutriShare</a>
-              </h3>
-              <p>NutriShare is a blockchain-powered app that enables verified, real-time redistribution of excess food
-                from donors (restaurants, caterers, individuals) to local NGOs, shelters, and needy individuals, with a
-                nutritional focus.</p>
+          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+            <div class="text">
+              <p class="mb-4">
+                <span class="number" data-number="30">0</span> <span>+</span>
+                <span>&nbsp; Projects completed</span>
+              </p>
+              <p><a href="https://www.linkedin.com/in/rishabhnmishra/" class="btn btn-primary py-3 px-3">LinkedIn</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <br>
-      <!-- added justify-content-center to center align the last two projects -->
-      <!-- <div class="row d-flex justify-content-center">  
+      <p>Below are some of my projects.</p>
+    </div>
+    </div>
+    <div class="row d-flex">
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://rudranarayann06.github.io/sih_ps25131/" class="block-20 zoom-effect"
+            style="background-image: url('images/proj_1.jpeg');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+
+            <h3 class="heading"><a href="https://rudranarayann06.github.io/sih_ps25131/">Mental Health Ecosystem for
+                Students & Youth</a></h3>
+            <p>A self-reliant, multilingual HealthTech platform: peer support, AI triage & verified counsellors —
+              built for India.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry justify-content-end">
+          <a href="https://github.com/rudranarayann06/Task_Manager_HackOdisha" class="block-20 zoom-effect"
+            style="background-image: url('images/proj_2.jpeg');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+
+            <h3 class="heading"><a href="https://github.com/rudranarayann06/Task_Manager_HackOdisha">AI Task Manager &
+                Expense Tracker</a></h3>
+            <p>Your all-in-one personal assistant for smarter productivity and stress-free finances. 💡 Intelligently
+              schedules tasks, tracks expenses, and gives AI-driven insights</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry">
+          <a href="https://github.com/rudranarayann06/nutrishare-byteverse2.0" class="block-20 zoom-effect"
+            style="background-image: url('images/proj_3.jpg');">
+          </a>
+          <div class="text mt-3 float-right d-block">
+
+            <h3 class="heading"><a href="https://github.com/rudranarayann06/nutrishare-byteverse2.0">NutriShare</a>
+            </h3>
+            <p>NutriShare is a blockchain-powered app that enables verified, real-time redistribution of excess food
+              from donors (restaurants, caterers, individuals) to local NGOs, shelters, and needy individuals, with a
+              nutritional focus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- added justify-content-center to center align the last two projects -->
+    <!-- <div class="row d-flex justify-content-center">  
 			<div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
 				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
