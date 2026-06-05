@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -22,1725 +23,7 @@
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /*======================================
-//--//-->   ABOUT
-======================================*/
-    html {
-
-      scroll-behavior: smooth;
-    }
-
-    body {
-
-      overflow-x: hidden;
-    }
-
-    .about-mf .box-shadow-full {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
-    }
-
-    .about-mf .about-img {
-      margin-bottom: 2rem;
-    }
-
-    .about-mf .about-img img {
-      margin-left: 10px;
-    }
-
-
-    .skill-mf .progress {
-      /* background-color: #cde1f8; */
-      margin: .5rem 0 1.2rem 0;
-      border-radius: 0;
-      height: .7rem;
-    }
-
-    .skill-mf .progress .progress-bar {
-      height: .7rem;
-      background-color: #ffbd39;
-    }
-
-    /* Animation styles */
-    #typing-animation {
-      position: relative;
-      font-size: 30px;
-      font-weight: bold;
-      color: rgb(255, 255, 255);
-      overflow: hidden;
-      white-space: nowrap;
-      animation: typing 3s steps(20, end) infinite;
-    }
-
-    #typing-animation:before {
-      content: "";
-      /* position: absolute; */
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 100%;
-      background-color: #ccc;
-      animation: typing-cursor 0.5s ease-in-out infinite;
-    }
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-
-      to {
-        width: 100%;
-      }
-    }
-
-    @keyframes typing-cursor {
-      from {
-        width: 5px;
-      }
-
-      to {
-        width: 0;
-      }
-    }
-
-
-    /* project image zoom effect */
-
-    .zoom-effect {
-      overflow: hidden;
-      transition: transform 0.3s ease-out;
-    }
-
-    .zoom-effect:hover {
-      transform: scale(1.1);
-    }
-
-    .logo-box {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .nav-logo {
-      width: 95px;
-      height: auto;
-      object-fit: contain;
-    }
-
-    /* =========================
-   MODERN HAMBURGER NAVBAR
-========================= */
-
-    .custom-navbar {
-      position: fixed;
-
-      top: px;
-      left: 20px;
-      right: 20px;
-
-      height: 100px;
-
-      padding: 0 42px;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      z-index: 9999;
-
-      border-radius: 34px;
-
-      transition: all 0.4s ease;
-
-      background: rgba(10, 10, 10, 0.18);
-
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-
-      border: 1px solid rgba(255, 255, 255, 0.05);
-
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
-
-      overflow: hidden;
-    }
-
-    .nav-left {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-
-    .logo-img {
-      width: 210px;
-      height: auto;
-      object-fit: contain;
-    }
-
-    .logo-text {
-      color: white;
-      font-size: 24px;
-      font-weight: 700;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .menu-btn {
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      transition: 0.3s ease;
-      z-index: 10001;
-    }
-
-    .menu-btn:hover {
-      transform: scale(1.08);
-    }
-
-    /* FULLSCREEN MENU */
-
-    .fullscreen-menu {
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 100%;
-      height: 100vh;
-      background: #000;
-      z-index: 10000;
-      transition: 0.5s ease;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      padding: 60px 80px;
-      overflow: hidden;
-    }
-
-    /* OPEN MENU */
-
-    .fullscreen-menu.active {
-      right: 0;
-    }
-
-    /* LEFT SIDE */
-
-    .menu-left {
-      width: 42%;
-      color: white;
-      padding-left: 0px;
-      display: flex;
-
-      flex-direction: column;
-
-      align-items: flex-start;
-    }
-
-    .menu-profile {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 30px;
-    }
-
-    .menu-logo {
-
-      width: 200px;
-
-      height: auto;
-
-      object-fit: contain;
-
-      margin-bottom: 24px;
-
-      margin-left: -6px;
-
-      display: block;
-    }
-
-    .menu-content a:hover {
-      color: white;
-      transform: translateX(-8px);
-    }
-
-    .menu-left h2 {
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 45px;
-      max-width: 520px;
-      color: white;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .menu-info p {
-      font-size: 18px;
-      color: #9c9c9c;
-      letter-spacing: 0.3px;
-      width: 100%;
-    }
-
-    .menu-info {
-      width: 100%;
-    }
-
-    /* RIGHT SIDE */
-
-    .menu-content a {
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 1.05;
-      color: #a8a8a8;
-      text-decoration: none;
-      transition: 0.3s ease;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .menu-content {
-      width: 32%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: center;
-      gap: 22px;
-      padding-right: 60px;
-    }
-
-    .menu-content a:hover {
-      color: white;
-      transform: translateX(-10px);
-    }
-
-    /* CLOSE BUTTON */
-
-    .close-btn {
-      position: absolute;
-      top: 30px;
-      right: 50px;
-      color: white;
-      font-size: 55px;
-      cursor: pointer;
-    }
-
-    /* MOBILE */
-
-    @media(max-width:768px) {
-
-      .custom-navbar {
-        width: 94%;
-        padding: 16px 20px;
-        top: 12px;
-      }
-
-      .logo-img {
-        width: 158px;
-      }
-
-      .logo-text {
-        font-size: 16px;
-      }
-
-      .menu-btn {
-        font-size: 34px;
-      }
-
-    }
-
-
-    .close-btn {
-      position: absolute;
-      top: 30px;
-      right: 50px;
-      color: white;
-      font-size: 40px;
-      cursor: pointer;
-    }
-
-    /* MOBILE */
-
-
-
-    .menu-info {
-      margin-top: 20px;
-    }
-
-    .menu-info p {
-      font-size: 15px;
-      color: #8d8d8d;
-      margin-bottom: 16px;
-      font-family: 'Poppins', sans-serif;
-      width: 100%;
-    }
-
-    .menu-profile {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 35px;
-    }
-
-
-
-    .menu-content a:hover {
-      color: white;
-      transform: translateX(-12px);
-    }
-
-
-    .social-icons {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-top: 35px;
-      justify-content: flex-start;
-    }
-
-    .social-icons a {
-      width: 42px;
-      height: 42px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 50%;
-
-      border: 1px solid rgba(255, 255, 255, 0.22);
-
-      color: white;
-
-      font-size: 22px;
-
-      text-decoration: none;
-
-      transition: all 0.35s ease;
-
-      background: rgba(255, 255, 255, 0.02);
-
-      backdrop-filter: blur(10px);
-    }
-
-    .social-icons a:hover {
-
-      transform: translateY(-6px);
-
-      background: white;
-
-      color: black;
-
-      border-color: white;
-
-      box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
-    }
-
-    .home-slider .slider-item .one-third {
-      background-position: center;
-      transform: scale(1.00);
-      pointer-events: none;
-    }
-
-    /* =========================
-      MODERN ABOUT SECTION
-========================= */
-
-    .modern-about-section {
-
-      width: 100%;
-      min-height: 100vh;
-
-      padding: 120px 8%;
-
-      background: black;
-    }
-
-    .about-heading {
-
-      color: white;
-
-      font-size: 72px;
-
-      font-weight: 700;
-
-      margin-bottom: 80px;
-
-      font-family: 'Poppins', sans-serif;
-
-      position: relative;
-
-      display: inline-block;
-    }
-
-    .about-heading::after {
-
-      content: "";
-
-      position: absolute;
-
-      left: 0;
-      bottom: -12px;
-
-      width: 90px;
-      height: 4px;
-
-      background: #ffbd39;
-
-      border-radius: 20px;
-    }
-
-    /* MAIN FLEX */
-
-    .about-container {
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: space-between;
-
-      gap: 90px;
-    }
-
-    /* IMAGE SIDE */
-
-    .about-image-box {
-
-      width: 42%;
-
-      display: flex;
-
-      justify-content: center;
-    }
-
-    .about-image {
-
-      width: 380px;
-      height: 380px;
-
-      object-fit: cover;
-
-      border-radius: 50%;
-
-      filter: grayscale(100%) brightness(0.9);
-
-      transition:
-        filter 0.6s ease,
-        transform 0.6s ease,
-        box-shadow 0.6s ease;
-
-      box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.45);
-
-      cursor: pointer;
-    }
-
-    /* HOVER EFFECT */
-
-    .about-image:hover {
-
-      filter: grayscale(0%) brightness(1);
-
-      transform: scale(1.04);
-
-      box-shadow:
-        0 0 45px rgba(255, 189, 57, 0.18),
-        0 20px 80px rgba(0, 0, 0, 0.55);
-    }
-
-    /* RIGHT TEXT */
-
-    .about-content {
-
-      width: 50%;
-    }
-
-    .about-content h2 {
-
-      color: #ffbd39;
-
-      font-size: 28px;
-
-      font-weight: 600;
-
-      margin-bottom: 28px;
-
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .about-content p {
-
-      color: #bdbdbd;
-
-      font-size: 20px;
-
-      line-height: 1.9;
-
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* MOBILE */
-
-    @media(max-width:768px) {
-
-      .modern-about-section {
-
-        padding: 100px 7%;
-      }
-
-      .about-heading {
-
-        font-size: 48px;
-
-        margin-bottom: 50px;
-      }
-
-      .about-container {
-
-        flex-direction: column;
-
-        gap: 50px;
-
-        text-align: center;
-      }
-
-      .about-image-box,
-      .about-content {
-
-        width: 100%;
-      }
-
-      .about-image {
-
-        width: 260px;
-        height: 260px;
-      }
-
-      .about-content p {
-
-        font-size: 17px;
-      }
-
-    }
-
-
-
-
-    /* IMAGE SLIDER */
-    /* =========================
-      EXPERIENCE SECTION
-========================= */
-
-    .experience-section {
-
-      width: 100%;
-
-      padding: 120px 0;
-
-      background: black;
-
-      overflow: hidden;
-    }
-
-    /* TITLE */
-
-    .experience-title {
-
-      color: white;
-
-      font-size: 64px;
-
-      font-weight: 700;
-
-      margin-bottom: 70px;
-
-      padding-left: 8%;
-
-      font-family: 'Poppins', sans-serif;
-
-      position: relative;
-    }
-
-    .experience-title::after {
-
-      content: "";
-
-      position: absolute;
-
-      left: 8%;
-      bottom: -14px;
-
-      width: 100px;
-      height: 4px;
-
-      background: #ffbd39;
-
-      border-radius: 20px;
-    }
-
-    /* SLIDER */
-
-    .logo-slider {
-
-      width: 100%;
-
-      overflow: hidden;
-
-      position: relative;
-    }
-
-    /* TRACK */
-
-    .logo-track {
-
-      display: flex;
-
-      align-items: center;
-
-      gap: 35px;
-
-      width: max-content;
-
-      animation: scrollLogos 22s linear infinite;
-    }
-
-    /* CARD */
-
-    .logo-card {
-
-      min-width: 320px;
-
-      height: 200px;
-
-      padding: 25px;
-
-      border-radius: 28px;
-
-      background: white;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      flex-shrink: 0;
-
-      transition:
-        transform 0.5s ease,
-        box-shadow 0.5s ease;
-    }
-
-    /* LOGO IMAGE */
-
-    .logo-card img {
-
-      width: 80%;
-
-      height: 80%;
-
-      object-fit: contain;
-    }
-
-    /* HOVER */
-
-    .logo-card:hover {
-
-      transform: translateY(-10px);
-
-      box-shadow:
-        0 15px 45px rgba(255, 189, 57, 0.15);
-    }
-
-    /* AUTO SCROLL */
-
-    @keyframes scrollLogos {
-
-      from {
-        transform: translateX(0);
-      }
-
-      to {
-        transform: translateX(-50%);
-      }
-    }
-
-    /* MOBILE FIX */
-
-    @media(max-width:768px) {
-
-      .experience-section {
-
-        padding: 100px 0;
-      }
-
-      .experience-title {
-
-        font-size: 46px;
-
-        margin-bottom: 50px;
-
-        padding-left: 7%;
-      }
-
-      .logo-track {
-
-        gap: 20px;
-      }
-
-      .logo-card {
-
-        min-width: 220px;
-
-        height: 140px;
-
-        border-radius: 22px;
-
-        padding: 18px;
-      }
-
-      .logo-card img {
-
-        width: 85%;
-
-        height: 85%;
-      }
-
-    }
-
-
-    /* =========================
-      ACHIEVEMENTS SECTION
-========================= */
-
-    .achievements-section {
-
-      width: 100%;
-
-      padding: 120px 8%;
-
-      background: black;
-    }
-
-    /* TITLE */
-
-    .achievements-title {
-
-      color: white;
-
-      font-size: 64px;
-
-      font-weight: 700;
-
-      margin-bottom: 70px;
-
-      position: relative;
-
-      display: inline-block;
-
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .achievements-title::after {
-
-      content: "";
-
-      position: absolute;
-
-      left: 0;
-      bottom: -14px;
-
-      width: 100px;
-      height: 4px;
-
-      background: #ffbd39;
-
-      border-radius: 20px;
-    }
-
-    /* GRID */
-
-    .achievements-container {
-
-      display: grid;
-
-      grid-template-columns: repeat(2, 1fr);
-
-      gap: 35px;
-    }
-
-    /* CARD */
-
-    .achievement-card {
-
-      position: relative;
-
-      padding: 45px;
-
-      border-radius: 32px;
-
-      background: rgba(255, 255, 255, 0.05);
-
-      border: 1px solid rgba(255, 255, 255, 0.08);
-
-      backdrop-filter: blur(16px);
-
-      overflow: hidden;
-
-      transition:
-        transform 0.5s ease,
-        background 0.5s ease,
-        box-shadow 0.5s ease;
-    }
-
-    /* HOVER */
-
-    .achievement-card:hover {
-
-      transform: translateY(-12px);
-
-      background: rgba(255, 255, 255, 0.08);
-
-      box-shadow:
-        0 15px 50px rgba(255, 189, 57, 0.12);
-    }
-
-    /* NUMBER */
-
-    .achievement-number {
-
-      font-size: 72px;
-
-      font-weight: 700;
-
-      color: rgba(255, 189, 57, 0.15);
-
-      margin-bottom: 20px;
-
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* HEADING */
-
-    .achievement-card h3 {
-
-      color: white;
-
-      font-size: 30px;
-
-      margin-bottom: 20px;
-
-      font-weight: 600;
-
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* TEXT */
-
-    .achievement-card p {
-
-      color: #bdbdbd;
-
-      font-size: 18px;
-
-      line-height: 1.9;
-
-      font-family: 'Poppins', sans-serif;
-    }
-
-    /* MOBILE */
-
-    @media(max-width:768px) {
-
-      .achievements-section {
-
-        padding: 100px 7%;
-      }
-
-      .achievements-title {
-
-        font-size: 46px;
-
-        margin-bottom: 50px;
-      }
-
-      .achievements-container {
-
-        grid-template-columns: 1fr;
-      }
-
-      .achievement-card {
-
-        padding: 35px;
-      }
-
-      .achievement-number {
-
-        font-size: 52px;
-      }
-
-      .achievement-card h3 {
-
-        font-size: 24px;
-      }
-
-      .achievement-card p {
-
-        font-size: 16px;
-      }
-
-    }
-
-
-    /* HOVER EFFECT */
-
-    .achievement-card:hover .achievement-slider img {
-
-      transform: scale(1.02);
-    }
-
-    /* =========================
-      ACHIEVEMENT SLIDER
-========================= */
-
-    .achievement-slider {
-
-      width: 100%;
-
-      height: 340px;
-
-      position: relative;
-
-      overflow: hidden;
-
-      border-radius: 24px;
-
-      margin-bottom: 35px;
-    }
-
-    /* ALL IMAGES */
-
-    .achievement-slider img {
-
-      position: absolute;
-
-      width: 100%;
-      height: 100%;
-
-      left: 0;
-      top: 0;
-
-      object-fit: cover;
-
-      opacity: 0;
-
-      animation: fadeSlider 8s infinite;
-
-      transition: transform 0.5s ease;
-    }
-
-    /* HOVER EFFECT */
-
-    .achievement-card:hover .achievement-slider img {
-
-      transform: scale(1.03);
-    }
-
-    /* IMAGE TIMINGS */
-
-    .achievement-slider img:nth-child(1) {
-      animation-delay: 0s;
-    }
-
-    .achievement-slider img:nth-child(2) {
-      animation-delay: 1s;
-    }
-
-    .achievement-slider img:nth-child(3) {
-      animation-delay: 2s;
-    }
-
-    .achievement-slider img:nth-child(4) {
-      animation-delay: 3s;
-    }
-
-    .achievement-slider img:nth-child(5) {
-      animation-delay: 4s;
-    }
-
-    .achievement-slider img:nth-child(6) {
-      animation-delay: 5s;
-    }
-
-    .achievement-slider img:nth-child(7) {
-      animation-delay: 6s;
-    }
-
-    .achievement-slider img:nth-child(8) {
-      animation-delay: 7s;
-    }
-
-    /* FADE ANIMATION */
-
-    @keyframes fadeSlider {
-
-      0% {
-        opacity: 0;
-      }
-
-      10% {
-        opacity: 1;
-      }
-
-      20% {
-        opacity: 1;
-      }
-
-      30% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 0;
-      }
-    }
-
-    /* MOBILE */
-
-    @media(max-width:768px) {
-
-      .achievement-slider {
-
-        height: 240px;
-      }
-
-    }
-
-    /* MOBILE */
-
-    @media(max-width:768px) {
-
-      .achievement-slider {
-
-        height: 240px;
-      }
-
-      .slides img {
-
-        height: 240px;
-      }
-
-    }
-
-    /* =========================
-   HERO KNOW MORE BUTTON
-========================= */
-
-    .hero-scroll-wrapper {
-
-      margin-top: 28px;
-
-      display: flex;
-
-      flex-direction: column;
-
-      align-items: center;
-
-      justify-content: center;
-    }
-
-    /* BUTTON */
-
-    .know-more-btn {
-
-      width: 190px;
-
-      height: 58px;
-
-      border: 1px solid rgba(255, 255, 255, 0.25);
-
-      border-radius: 50px;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      color: white;
-
-      font-size: 16px;
-
-      letter-spacing: 2px;
-
-      font-weight: 600;
-
-      text-decoration: none;
-
-      font-family: 'Poppins', sans-serif;
-
-      transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-
-      background: rgba(255, 255, 255, 0.02);
-
-      backdrop-filter: blur(10px);
-    }
-
-    .know-more-btn:hover {
-
-      transform: translateY(-6px);
-
-      border-color: #ffbd39;
-
-      color: #ffbd39;
-
-      box-shadow: 0 10px 35px rgba(255, 189, 57, 0.18);
-    }
-
-    /* MOUSE ICON */
-
-    .scroll-mouse {
-
-      width: 24px;
-
-      height: 38px;
-
-      border: 2px solid rgba(255, 255, 255, 0.55);
-
-      border-radius: 25px;
-
-      margin-top: 28px;
-
-      position: relative;
-    }
-
-    /* SCROLL DOT */
-
-    .scroll-mouse::before {
-
-      content: "";
-
-      position: absolute;
-
-      top: 10px;
-
-      left: 50%;
-
-      width: 4px;
-
-      height: 8px;
-
-      background: white;
-
-      border-radius: 20px;
-
-      transform: translateX(-50%);
-
-      animation: scrollAnim 1.6s infinite;
-    }
-
-    /* ANIMATION */
-
-    @keyframes scrollAnim {
-
-      0% {
-        opacity: 0;
-        top: 10px;
-      }
-
-      30% {
-        opacity: 1;
-      }
-
-      100% {
-        opacity: 0;
-        top: 28px;
-      }
-    }
-
-    /* MOBILE */
-
-    @media(max-width:768px) {
-
-      .hero-scroll-wrapper {
-
-        margin-top: 28px;
-      }
-
-      .know-more-btn {
-
-        width: 220px;
-
-        height: 68px;
-
-        font-size: 18px;
-
-        letter-spacing: 2px;
-      }
-
-      .scroll-mouse {
-
-        width: 28px;
-
-        height: 46px;
-
-        margin-top: 40px;
-      }
-    }
-
-    /* =========================
-   MOBILE MENU FIX
-========================= */
-
-    @media(max-width:768px) {
-
-      .fullscreen-menu {
-
-        flex-direction: column;
-
-        justify-content: flex-start;
-
-        align-items: flex-start;
-
-        padding: 35px 28px;
-
-        overflow-y: auto;
-      }
-
-      .menu-left {
-
-        width: 100%;
-
-        margin-top: 20px;
-      }
-
-      .menu-profile {
-
-        width: 90px;
-
-        height: 90px;
-
-        margin-bottom: 20px;
-      }
-
-      .menu-left h2 {
-
-        font-size: 26px;
-
-        line-height: 1.15;
-
-        margin-bottom: 25px;
-
-        max-width: 100%;
-      }
-
-      .menu-info p {
-
-        font-size: 15px;
-
-        line-height: 1.7;
-      }
-
-      .menu-content {
-
-        width: 100%;
-
-        align-items: flex-start;
-
-        margin-top: 35px;
-
-        gap: 14px;
-
-        padding-right: 0;
-      }
-
-      .menu-content a {
-
-        font-size: 24px;
-
-        line-height: 1.1;
-      }
-
-      .close-btn {
-
-        top: 18px;
-
-        right: 22px;
-
-        font-size: 34px;
-      }
-
-      .social-icons {
-
-        margin-top: 22px;
-
-        gap: 10px;
-      }
-    }
-
-    /* =========================
-   PROJECTS SECTION
-========================= */
-
-    .projects-section {
-      width: 100%;
-      padding: 120px 7%;
-      background: #000;
-      color: white;
-    }
-
-    /* =========================
-   HEADING
-========================= */
-
-    .projects-heading {
-      text-align: center;
-      margin-bottom: 70px;
-    }
-
-    .projects-tag {
-      color: #fbbf24;
-      font-size: 14px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      margin-bottom: 15px;
-      font-weight: 600;
-    }
-
-    .projects-heading h2 {
-      font-size: 60px;
-      font-weight: 800;
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
-
-    .projects-heading h2 span {
-      color: #fbbf24;
-    }
-
-    .projects-text {
-      max-width: 700px;
-      margin: auto;
-      color: #9ca3af;
-      line-height: 1.8;
-      font-size: 17px;
-    }
-
-    .projects-line {
-      width: 120px;
-      height: 5px;
-      background: #fbbf24;
-      margin: 35px auto 0;
-      border-radius: 20px;
-    }
-
-    /* =========================
-   PROJECTS GRID
-========================= */
-
-    .projects-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 35px;
-      align-items: stretch;
-    }
-
-    /* =========================
-   PROJECT CARD
-========================= */
-
-    .project-card {
-
-      background: #070707;
-
-      border-radius: 30px;
-
-      overflow: hidden;
-
-      border: 1px solid rgba(255, 255, 255, 0.06);
-
-      transition: 0.45s ease;
-
-      display: flex;
-
-      flex-direction: column;
-
-      height: 100%;
-    }
-
-    .project-card:hover {
-
-      transform: translateY(-10px);
-
-      border-color: rgba(255, 189, 57, 0.25);
-
-      box-shadow:
-        0 20px 50px rgba(255, 189, 57, 0.08);
-    }
-
-    /* IMAGE */
-
-    .project-image {
-
-      width: 100%;
-
-      height: 240px;
-
-      overflow: hidden;
-
-      padding: 18px;
-    }
-
-    .project-image img {
-
-      width: 100%;
-
-      height: 100%;
-
-      object-fit: cover;
-
-      border-radius: 22px;
-
-      transition: 0.5s ease;
-    }
-
-    .project-card:hover img {
-
-      transform: scale(1.05);
-    }
-
-    /* CONTENT */
-
-    .project-content {
-
-      padding: 10px 24px 28px;
-
-      display: flex;
-
-      flex-direction: column;
-
-      flex-grow: 1;
-    }
-
-    /* SMALL TAG */
-
-    .project-tag {
-
-      color: #ffbd39;
-
-      font-size: 13px;
-
-      letter-spacing: 1px;
-
-      text-transform: uppercase;
-
-      font-weight: 600;
-
-      margin-bottom: 14px;
-    }
-
-    /* TITLE */
-
-    .project-content h3 {
-
-      font-size: 24px;
-
-      font-weight: 700;
-
-      line-height: 1.35;
-
-      color: white;
-
-      margin-bottom: 18px;
-    }
-
-    /* DESCRIPTION */
-
-    .project-content p {
-
-      color: #9ca3af;
-
-      line-height: 1.8;
-
-      font-size: 15px;
-
-      margin-bottom: 28px;
-    }
-
-    /* BUTTONS */
-
-    .project-buttons {
-
-      display: flex;
-
-      gap: 14px;
-
-      margin-top: auto;
-    }
-
-    /* VISIT BUTTON */
-
-    .visit-btn {
-
-      padding: 13px 24px;
-
-      background: #ffbd39;
-
-      color: black;
-
-      border-radius: 50px;
-
-      text-decoration: none;
-
-      font-weight: 600;
-
-      transition: 0.3s ease;
-    }
-
-    .visit-btn:hover {
-
-      transform: translateY(-3px);
-
-      background: white;
-    }
-
-    /* SOURCE CODE BUTTON */
-
-    .code-btn {
-
-      padding: 13px 24px;
-
-      border: 1px solid rgba(255, 255, 255, 0.12);
-
-      color: white;
-
-      border-radius: 50px;
-
-      text-decoration: none;
-
-      font-weight: 600;
-
-      transition: 0.3s ease;
-    }
-
-    .code-btn:hover {
-
-      border-color: #ffbd39;
-
-      color: #ffbd39;
-
-      transform: translateY(-3px);
-    }
-
-
-/* =========================
-   FOOTER
-========================= */
-
-.modern-footer{
-
-     width: 100%;
-
-    padding: 22px 5%;
-
-    border-top: 1px solid rgba(255,255,255,0.05);
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    background: black;
-}
-
-/* LEFT */
-
-.footer-left{
-
-    color: rgba(255,255,255,0.38);
-
-    font-size: 13px;
-
-    font-weight: 400;
-
-    letter-spacing: 0.3px;
-
-    font-family: 'Poppins', sans-serif;f;
-}
-
-/* RIGHT */
-
-.footer-right{
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-}
-
-.footer-right a{
-
-    width: 40px;
-
-    height: 40px;
-
-    border-radius: 50%;
-
-    border: 1px solid rgba(255,255,255,0.05);
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: rgba(255,255,255,0.55);
-
-    text-decoration: none;
-
-    font-size: 16px;
-
-    transition: 0.35s ease;
-
-    background: rgba(255,255,255,0.015);
-}
-
-.footer-right a:hover{
-
-    transform: translateY(-3px);
-
-    color: #ffbd39;
-
-    border-color: rgba(255,189,57,0.25);
-
-    background: rgba(255,189,57,0.05);
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:768px){
-
-    .modern-footer{
-
-        flex-direction: column;
-
-        gap: 25px;
-
-        text-align: center;
-    }
-
-    .footer-left{
-
-        line-height: 1.8;
-    }
-
-}
-  </style>
-
-
+  <link rel="stylesheet" href="css/styless.css">
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -1802,6 +85,10 @@
 
         <a href="https://wa.me/918260407117" target="_blank">
           <i class="icon-whatsapp"></i>
+        </a>
+
+        <a href="https://codolio.com/profile/rudranarayan" target="_blank">
+          <i class="fas fa-code"></i>
         </a>
       </div>
 
@@ -1923,71 +210,171 @@
 
   </section>
 
+
+
   <section class="experience-section">
 
     <h2 class="experience-title">
       Experience
     </h2>
+    <div class="logo-slider-wrapper">
 
-    <div class="logo-slider">
+      <div class="logo-slider">
+        <div class="logo-slider">
 
-      <div class="logo-track">
+          <div class="logo-track">
 
-        <!-- CARD 1 -->
-        <div class="logo-card">
-          <img src="images/IEEE.png">
+            <!-- CARD 1 -->
+            <div class="logo-card">
+              <img src="images/IEEE.png">
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="logo-card">
+              <img src="images/Google Cloud.png">
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="logo-card">
+              <img src="images/SOA.png">
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="logo-card">
+              <img src="images/KV.png">
+            </div>
+
+            <div class="logo-card">
+              <img src="images/NCC.png">
+            </div>
+
+            <!-- DUPLICATE FOR SMOOTH LOOP -->
+
+            <div class="logo-card">
+              <img src="images/IEEE.png">
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="logo-card">
+              <img src="images/Google Cloud.png">
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="logo-card">
+              <img src="images/SOA.png">
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="logo-card">
+              <img src="images/KV.png">
+            </div>
+
+            <div class="logo-card">
+              <img src="images/NCC.png">
+            </div>
+
+          </div>
+
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-section">
 
-        <!-- CARD 2 -->
-        <div class="logo-card">
-          <img src="images/Google Cloud.png">
-        </div>
+    <!-- Left Card -->
+    <div class="skills-card">
 
-        <!-- CARD 3 -->
-        <div class="logo-card">
-          <img src="images/SOA.png">
-        </div>
+      <div class="skills-grid">
 
-        <!-- CARD 4 -->
-        <div class="logo-card">
-          <img src="images/KV.png">
-        </div>
+        <div class="skills-grid">
 
-        <div class="logo-card">
-          <img src="images/NCC.png">
-        </div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+          </div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+          </div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"></div>
 
-        <!-- DUPLICATE FOR SMOOTH LOOP -->
+          <div class="skill"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"></div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+          </div>
+          <div class="skill"><i class="fas fa-database"></i></div>
+          <div class="skill"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"></div>
 
-        <div class="logo-card">
-          <img src="images/IEEE.png">
-        </div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg">
+          </div>
+          <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"></div>
+          <div class="skill"><img class="white-icon"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"></div>
 
-        <!-- CARD 2 -->
-        <div class="logo-card">
-          <img src="images/Google Cloud.png">
-        </div>
+          <div class="skill"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"></i></div>
+          <div class="skill"><img src="images/Icons/docs.png"" alt=" Canva"></div>
+          <div class="skill"><img src="images/Icons/docker.png" alt="Docs"></div>
+          <div class="skill"><img src="images/Icons/slides.png" alt="Excel"></div>
+          <div class="skill"><img src="images/Icons/canva.png" alt="Powerpoint"></div>
+          <div class="skill"><img src="images/Icons/excel.png" alt="Sheets"></div>
+          <div class="skill"><img src="images/Icons/ppt.png" alt="Slides"></div>
+          <div class="skill"><img src="images/Icons/sheets.png" alt="Word"></div>
+          <div class="skill"><img src="images/Icons/word.png" alt="Word"></div>
 
-        <!-- CARD 3 -->
-        <div class="logo-card">
-          <img src="images/SOA.png">
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="logo-card">
-          <img src="images/KV.png">
-        </div>
-
-        <div class="logo-card">
-          <img src="images/NCC.png">
+          <div class="skill"><img src="https://cdn.simpleicons.org/vercel/FFFFFF"></div>
+          <div class="skill"><img src="https://cdn.simpleicons.org/netlify/00C7B7"></div>
         </div>
 
       </div>
 
+      <div class="card-divider"></div>
+
+      <div class="card-content">
+        <h3>Building Ideas Into Reality</h3>
+
+        <p>
+          Frontend • Problem Solver • Tech Explorer
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right Side -->
+    <div class="skills-info">
+
+      <p class="skills-text">
+        Combining creativity, engineering and
+        problem-solving to build meaningful
+        digital experiences.
+      </p>
+
+      <div class="stats-grid">
+
+        <div class="stat-card">
+          <h2 class="counter" data-target="140">0</h2>
+          <p>LeetCode Problems Solved</p>
+        </div>
+
+        <div class="stat-card">
+          <h2 class="counter" data-target="50">0</h2>
+          <p>Merit Certificates</p>
+        </div>
+
+        <div class="stat-card">
+          <h2 class="counter" data-target="5">0</h2>
+          <p>Awards & Trophies</p>
+        </div>
+
+        <div class="stat-card">
+          <h2 class="counter" data-target="10">0</h2>
+          <p>Hackathon Finalist</p>
+        </div>
+
+      </div>
+    </div>
+
     </div>
 
   </section>
-
   <section class="achievements-section" id="achievements-section">
 
     <h2 class="achievements-title">
@@ -2296,44 +683,47 @@
 
 
 
- <!-- FOOTER -->
+  <!-- FOOTER -->
 
-<footer class="modern-footer">
+  <footer class="modern-footer">
 
     <!-- LEFT -->
     <div class="footer-left">
 
-        Copyright ©2025 Rudra Narayan Nahak.
-        All Rights Reserved.
+      Copyright ©2025 Rudra Narayan Nahak.
+      All Rights Reserved.
 
     </div>
 
     <!-- RIGHT -->
     <div class="footer-right">
 
-        <a href="http://www.linkedin.com/in/rudranarayann">
-            <i class="icon-linkedin"></i>
-        </a>
+      <a href="http://www.linkedin.com/in/rudranarayann">
+        <i class="icon-linkedin"></i>
+      </a>
 
-        <a href="https://github.com/rudranarayann06">
-            <i class="icon-github"></i>
-        </a>
+      <a href="https://github.com/rudranarayann06">
+        <i class="icon-github"></i>
+      </a>
 
-        <a href="https://www.instagram.com/_.rudra.narayann._">
-            <i class="icon-instagram"></i>
-        </a>
+      <a href="https://www.instagram.com/_.rudra.narayann._">
+        <i class="icon-instagram"></i>
+      </a>
 
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rudranahak310@gmail.com">
-            <i class="icon-envelope"></i>
-        </a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rudranahak310@gmail.com">
+        <i class="icon-envelope"></i>
+      </a>
 
-        <a href="https://wa.me/918260407117">
-            <i class="icon-whatsapp"></i>
-        </a>
+      <a href="https://wa.me/918260407117">
+        <i class="icon-whatsapp"></i>
+      </a>
 
+      <a href="https://codolio.com/profile/rudranarayan" target="_blank">
+          <i class="fas fa-code"></i>
+        </a>
     </div>
 
-</footer>
+  </footer>
 
 
   <!-- loader -->
@@ -2359,33 +749,8 @@
 
   <script src="js/main.js"></script>
 
-  <script>
+  <script src="js/scripts.js"></script>
 
-    function toggleMenu() {
-
-      document
-        .getElementById("fullscreenMenu")
-        .classList
-        .toggle("active");
-
-      window.addEventListener("scroll", function () {
-
-        const navbar = document.querySelector(".custom-navbar");
-
-        if (window.scrollY > 50) {
-
-          navbar.classList.add("scrolled");
-
-        } else {
-
-          navbar.classList.remove("scrolled");
-
-        }
-
-      });
-    }
-
-  </script>
 </body>
 
 </html>
