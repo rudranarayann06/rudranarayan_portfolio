@@ -2855,3 +2855,9 @@ textarea{
         text-align: center;
     }
 }
+
+.visitor-counter{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
